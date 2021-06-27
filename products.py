@@ -1,3 +1,10 @@
+import os
+
+if os.path.isfile('product.csv'):
+	print('File is exist.')
+else:
+	print('File is not exitt')
+
 products = []
 products_check=[]
 
