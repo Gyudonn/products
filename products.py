@@ -10,3 +10,7 @@ while True:
 
 for product in products:
 	print('The price of ' + product[0] + ' is ' + product[1])
+
+with open('product.txt', 'w') as f:
+	for product in products:
+		f.write(product[0] + ',' + product[1] + '\n')
