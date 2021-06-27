@@ -19,6 +19,8 @@ for product in products:
 
 with open('product.csv' , 'r', encoding = 'utf-8') as file:
 			for line in file:
+				if 'Good,Price' in line:
+					continue
 				name, price = line.strip().split(',')
 				product = [name, price]
 				products_check.append(product)
